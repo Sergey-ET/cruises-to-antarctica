@@ -1,6 +1,15 @@
 .page-header {
+  position: absolute;
   padding-top: 35px;
   padding-bottom: 35px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 
   @include vp-1023 {
     padding-top: 30px;
