@@ -1,17 +1,20 @@
 .introduction {
   position: relative;
   padding-top: 270px;
+  top: -116px;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   z-index: -1;
   min-height: 650px;
 
   @include vp-1023 {
+    top: -88px;
     padding-top: 268px;
     min-height: 638px;
     filter: none;
   }
 
   @include vp-767 {
+    top: -70px;
     padding-top: 176px;
     min-height: 500px;
   }
@@ -34,6 +37,7 @@
   height: 650px;
   z-index: -1;
   object-fit: cover;
+  object-position: 0 90%;
 
   @include vp-1023 {
     height: 638px;
