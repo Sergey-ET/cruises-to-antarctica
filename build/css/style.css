@@ -1132,9 +1132,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011C40));
-  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011C40 100%);
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(1, 28, 64, 0)), to(#011c40));
+  background: -o-linear-gradient(top, rgba(1, 28, 64, 0) 50%, #011c40 100%);
+  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
 }
 
 .products__item:hover,

@@ -55,7 +55,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+  background: $tangaroa-to-right;
 
   &:hover,
   &:focus {
