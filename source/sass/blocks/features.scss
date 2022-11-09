@@ -1,0 +1,176 @@
+.features {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 120px;
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $color-solitude;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 0;
+  }
+
+  @include vp-1023 {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 57px;
+    padding-bottom: 65px;
+  }
+}
+
+.features__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  object-position: 0 90%;
+}
+
+.features__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.features h2 {
+  margin: 0;
+  margin-bottom: 49px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+
+  @include vp-1023 {
+    font-size: 26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+
+  @include vp-1023 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.features__item {
+  position: relative;
+  padding: 81px 30px 45px 30px;
+  background-color: $color-alice-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 32px;
+
+    @include vp-1023 {
+      top: 26px;
+      left: 20px;
+      height: 26px;
+    }
+
+    @include vp-767 {
+      top: 25px;
+    }
+  }
+
+  &--ship {
+    &::before {
+      background-image: url("../img/svg/ship.svg");
+      width: 27px;
+
+      @include vp-1023 {
+        background-image: url("../img/svg/ship-small.svg");
+        width: 21px;
+      }
+    }
+  }
+
+  &--inclusive {
+    &::before {
+      background-image: url("../img/svg/double-tick.svg");
+      width: 38px;
+
+      @include vp-1023 {
+        background-image: url("../img/svg/double-tick-small.svg");
+        width: 27px;
+      }
+    }
+  }
+
+  &--zodiac {
+    &::before {
+      background-image: url("../img/svg/boat.svg");
+      width: 44px;
+
+      @include vp-1023 {
+        background-image: url("../img/svg/boat-small.svg");
+        width: 36px;
+      }
+    }
+  }
+
+  @include vp-1023 {
+    padding: 71px 15px 21px 20px;
+  }
+
+  @include vp-767 {
+    padding: 71px 15px 21px 20px;
+  }
+
+}
+
+.features h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+
+  @include vp-1023 {
+    margin-bottom: 11px;
+    line-height: 140%;
+  }
+
+  @include vp-767 {
+    width: 170px;
+    margin-bottom: 9px;
+  }
+}
+
+.features p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
