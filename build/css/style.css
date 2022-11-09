@@ -1694,6 +1694,12 @@ button,
     min-height: 280px;
   }
 
+  .main-nav--nojs .main-nav__list {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
   .main-nav--nojs .main-nav__logo-image {
     position: absolute;
     top: 10px;
