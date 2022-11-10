@@ -1412,6 +1412,95 @@ button,
   line-height: 150%;
 }
 
+.contacts {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.contacts__map {
+  position: relative;
+  min-width: 560px;
+  max-width: 560px;
+  height: 306px;
+  margin-right: auto;
+  background-color: #011c40;
+}
+
+.contacts__image {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__text {
+  width: 500px;
+  padding-top: 75px;
+}
+
+.contacts__text p {
+  margin: 0;
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.contacts__text span {
+  position: relative;
+  display: block;
+  margin-bottom: 22px;
+  padding-left: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contacts__text span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 22px;
+  background-image: url("../img/svg/pin.svg");
+}
+
+.contacts__phone {
+  position: relative;
+  display: block;
+  padding-left: 28px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contacts__phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/svg/phone.svg");
+}
+
+.contacts__phone:hover,
+.contacts__phone:focus {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
 .page-footer {
   padding-top: 51px;
   padding-bottom: 43px;
@@ -1482,6 +1571,10 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   gap: 27px;
+}
+
+.page-footer__socials-image:hover {
+  opacity: 0.7;
 }
 
 /* @mixin hover-focus {
@@ -1701,6 +1794,42 @@ button,
   .booking p {
     margin: 0 auto;
     margin-bottom: 52px;
+  }
+
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contacts__container {
+    gap: 29px;
+  }
+
+  .contacts__map {
+    min-width: 48%;
+    max-width: 48%;
+    height: 335px;
+  }
+
+  .contacts__text {
+    width: 51%;
+    padding-top: 66px;
+  }
+
+  .contacts__text p {
+    margin-bottom: 27px;
+  }
+
+  .contacts__text span {
+    padding-left: 27px;
+  }
+
+  .contacts__text span::before {
+    top: 5px;
+  }
+
+  .contacts__phone {
+    padding-left: 27px;
   }
 
   .page-footer__container {
@@ -2100,6 +2229,49 @@ button,
   .booking input[name=agree] + label[for=agree]::before {
     top: 2px;
     left: 1px;
+  }
+
+  .contacts {
+    padding-top: 58px;
+    padding-bottom: 65px;
+  }
+
+  .contacts__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .contacts__map {
+    min-width: 100%;
+    max-width: 100%;
+    height: 316px;
+    margin-right: 0;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .contacts__text {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .contacts__text p {
+    margin-bottom: 28px;
+  }
+
+  .contacts__text span {
+    margin-bottom: 20px;
+  }
+
+  .contacts__phone {
+    margin-bottom: 36px;
   }
 
   .page-footer {

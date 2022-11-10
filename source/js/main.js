@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {mobileMenu} from './modules/mobile-menu';
 import {scrollToElement} from './modules/scroll';
 import {validatePhone} from './modules/validation';
+import {getMap} from './modules/map';
 
 // ---------------------------------
 
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     validatePhone();
+    getMap();
   });
 });
 
