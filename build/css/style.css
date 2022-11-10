@@ -651,6 +651,10 @@ button,
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn--red {
@@ -1102,24 +1106,19 @@ button,
 .products__list {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (auto)[2];
+  grid-template-rows: repeat(2, auto);
   gap: 30px;
   list-style: none;
 }
 
 .products__item {
   position: relative;
-  width: 260px;
+  max-width: 260px;
   min-height: 386px;
   padding: 58px 25px 35px 25px;
   display: -webkit-box;
@@ -1763,8 +1762,15 @@ button,
     font-size: 26px;
   }
 
+  .products__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
   .products__item {
-    width: 309px;
+    max-width: 309px;
     padding: 58px 35px 35px 35px;
   }
 
@@ -2181,8 +2187,13 @@ button,
     font-size: 24px;
   }
 
+  .products__list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .products__item {
-    width: 270px;
+    max-width: 270px;
     padding: 58px 25px 35px 25px;
   }
 

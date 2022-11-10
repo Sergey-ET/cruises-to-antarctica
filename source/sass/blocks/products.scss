@@ -39,17 +39,25 @@
 .products__list {
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 30px;
   list-style: none;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .products__item {
   position: relative;
-  width: 260px;
+  max-width: 260px;
   min-height: 386px;
   padding: 58px 25px 35px 25px;
   display: flex;
@@ -71,12 +79,12 @@
   }
 
   @include vp-1023 {
-    width: 309px;
+    max-width: 309px;
     padding: 58px 35px 35px 35px;
   }
 
   @include vp-767 {
-    width: 270px;
+    max-width: 270px;
     padding: 58px 25px 35px 25px;
   }
 }
