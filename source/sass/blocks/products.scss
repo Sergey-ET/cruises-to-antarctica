@@ -55,11 +55,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: $tangaroa-to-right;
+  background-color: $color-tangaroa;
 
-  &:hover,
-  &:focus {
-    background-color: $color-tangaroa;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: $tangaroa-to-right;
+    z-index: 2;
   }
 
   @include vp-1023 {
@@ -82,7 +90,20 @@
   right: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 1;
+}
+
+.products__item:hover .products__image,
+.products__item:focus-within .products__image {
+  display: none;
+}
+
+.products__item:hover,
+.products__item:focus-within {
+  &::before {
+    background: none;
+    z-index: 0;
+  }
 }
 
 .products h3 {
@@ -94,6 +115,7 @@
   font-size: 18px;
   line-height: 150%;
   color: $color-alice-blue;
+  z-index: 2;
 
   @include vp-1023 {
     left: 35px;
@@ -106,8 +128,24 @@
   }
 }
 
+.products__item:hover h3,
+.products__item:focus-within h3 {
+  top: 29px;
+  left: 25px;
+  z-index: 0;
+
+  @include vp-1023 {
+    left: 35px;
+  }
+
+  @include vp-767 {
+    left: 25px;
+  }
+}
+
 .products dl {
-  display: none;
+  margin: 0;
+  padding: 0;
 }
 
 .products dt {
@@ -131,32 +169,6 @@
 }
 
 .products__button {
-  display: none;
-}
-
-.products__item:hover h3,
-.products__item:focus h3 {
-  top: 29px;
-  left: 25px;
-
-  @include vp-1023 {
-    left: 35px;
-  }
-
-  @include vp-767 {
-    left: 25px;
-  }
-}
-
-.products__item:hover dl,
-.products__item:focus dl {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.products__item:hover .products__button,
-.products__item:focus .products__button {
   position: relative;
   display: block;
   padding: 9px 15px 10px;
@@ -165,5 +177,4 @@
   font-size: 14px;
   line-height: 150%;
   text-align: center;
-  z-index: 1;
 }
