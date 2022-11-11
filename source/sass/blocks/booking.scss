@@ -2,6 +2,8 @@
   position: relative;
   padding-top: 50px;
   padding-bottom: 49px;
+  background-color: $color-tangaroa-opacity-05;
+  z-index: 1;
 
   @include vp-1023 {
     padding-top: 88px;
@@ -33,11 +35,16 @@
   bottom: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: 0 90%;
   z-index: -1;
 }
 
 .booking__text {
+  max-width: 50%;
+
   @include vp-1023 {
+    max-width: 100%;
     text-align: center;
   }
 }
@@ -139,6 +146,11 @@
     line-height: 150%;
     color: $color-tangaroa-opacity-07;
   }
+
+  &:hover {
+    outline: 1px solid $color-alice-blue;
+    outline-offset: 1px;
+  }
 }
 
 .booking label[for="agree"] {
@@ -193,8 +205,10 @@
   opacity: 0.4;
 }
 
-.booking input[name="agree"]:focus+label[for="agree"]::before {
+.booking input[name="agree"]:focus+label[for="agree"]::before,
+.booking input[name="agree"]:hover+label[for="agree"]::before {
   outline: 1px solid $color-alice-blue;
+  outline-offset: 1px;
 }
 
 .booking input[name="agree"]:disabled+label[for="agree"]::before {

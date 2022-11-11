@@ -1,4 +1,5 @@
 const mobileMenu = () => {
+  const pageHeader = document.querySelector('.page-header');
   const navMain = document.querySelector('.main-nav');
   const navToggle = document.querySelector('.main-nav__toggle');
   const navLinks = navMain.querySelectorAll('.main-nav__link');
@@ -11,6 +12,7 @@ const mobileMenu = () => {
   };
 
   navMain.classList.remove('main-nav--nojs');
+  pageHeader.classList.remove('page-header--nojs');
 
   navToggle.addEventListener('click', function () {
     if (navMain.classList.contains('main-nav--closed')) {

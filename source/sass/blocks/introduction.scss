@@ -1,21 +1,25 @@
 .introduction {
   position: relative;
-  padding-top: 270px;
-  top: -116px;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  z-index: -1;
   min-height: 650px;
+  padding-top: 270px;
+  padding-bottom: 278px;
+  // top: -116px;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: $color-tangaroa;
+  z-index: -1;
 
   @include vp-1023 {
-    top: -88px;
+    // top: -88px;
     padding-top: 268px;
+    padding-bottom: 275px;
     min-height: 638px;
     filter: none;
   }
 
   @include vp-767 {
-    top: -70px;
+    // top: -70px;
     padding-top: 176px;
+    padding-bottom: 177px;
     min-height: 500px;
   }
 }
@@ -33,19 +37,12 @@
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
   width: 100%;
-  height: 650px;
+  height: 100%;
   z-index: -1;
   object-fit: cover;
   object-position: 0 90%;
-
-  @include vp-1023 {
-    height: 638px;
-  }
-
-  @include vp-767 {
-    height: 500px;
-  }
 }
 
 .introduction h1 {
