@@ -157,7 +157,6 @@ module.exports = {
 
     'color-no-invalid-hex': true,
     'color-no-hex': null,
-    'color-named': 'never',
-    'number-max-precision': 
+    'color-named': 'never'
   },
 };
