@@ -131,7 +131,7 @@
   flex-wrap: wrap;
 }
 
-.booking form input {
+.booking input {
   margin-bottom: 20px;
   padding: 11px 16px;
   font-weight: 400;
@@ -179,7 +179,7 @@
   left: 10px;
 }
 
-.booking input[name="agree"]+label[for="agree"]::before {
+.booking input[name="agree"] + label[for="agree"]::before {
   content: "";
   position: absolute;
   top: -3px;
@@ -195,27 +195,27 @@
   }
 }
 
-.booking input[name="agree"]:checked+label[for="agree"]::before {
+.booking input[name="agree"]:checked + label[for="agree"]::before {
   background-image: url("../img/svg/tick.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.booking input[name="agree"]:disabled+label[for="agree"] {
+.booking input[name="agree"]:disabled + label[for="agree"] {
   opacity: 0.4;
 }
 
-.booking input[name="agree"]:focus+label[for="agree"]::before,
-.booking input[name="agree"]:hover+label[for="agree"]::before {
+.booking input[name="agree"]:focus + label[for="agree"]::before,
+.booking input[name="agree"]:hover + label[for="agree"]::before {
   outline: 1px solid $color-alice-blue;
   outline-offset: 1px;
 }
 
-.booking input[name="agree"]:disabled+label[for="agree"]::before {
+.booking input[name="agree"]:disabled + label[for="agree"]::before {
   border-color: $color-tangaroa-opacity-015;
 }
 
-.booking input[name="agree"]:checked:disabled+label[for="agree"]::before {
+.booking input[name="agree"]:checked:disabled + label[for="agree"]::before {
   opacity: 0.4;
 }
 

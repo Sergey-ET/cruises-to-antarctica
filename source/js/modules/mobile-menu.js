@@ -1,4 +1,4 @@
-const mobileMenu = () => {
+const toggleMobileMenu = () => {
   const pageHeader = document.querySelector('.page-header');
   const navMain = document.querySelector('.main-nav');
   const navToggle = document.querySelector('.main-nav__toggle');
@@ -41,4 +41,4 @@ const mobileMenu = () => {
   });
 };
 
-export {mobileMenu};
+export {toggleMobileMenu};

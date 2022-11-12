@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {mobileMenu} from './modules/mobile-menu';
+import {toggleMobileMenu} from './modules/mobile-menu';
 import {scrollToElement} from './modules/scroll';
 import {validatePhone} from './modules/validation';
 import {getMap} from './modules/map';
@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
-  mobileMenu();
+  toggleMobileMenu();
   scrollToElement();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

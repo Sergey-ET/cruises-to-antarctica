@@ -538,13 +538,7 @@ input[type=number] {
 
 select,
 textarea,
-input:matches([type=email],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=url]) {
+input:matches([type=email], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url]) {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1345,7 +1339,7 @@ button,
   flex-wrap: wrap;
 }
 
-.booking form input {
+.booking input {
   margin-bottom: 20px;
   padding: 11px 16px;
   font-weight: 400;
@@ -1355,42 +1349,42 @@ button,
   border: none;
 }
 
-.booking form input::-webkit-input-placeholder {
+.booking input::-webkit-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking form input::-moz-placeholder {
+.booking input::-moz-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking form input:-ms-input-placeholder {
+.booking input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking form input::-ms-input-placeholder {
+.booking input::-ms-input-placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking form input::placeholder {
+.booking input::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking form input:hover {
+.booking input:hover {
   outline: 1px solid #f9fbfd;
   outline-offset: 1px;
 }
