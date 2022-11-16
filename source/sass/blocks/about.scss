@@ -16,7 +16,6 @@
 
 .about__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
   @include vp-1023 {
@@ -30,9 +29,11 @@
 
 .about__description {
   width: 50%;
+  padding-top: 59px;
 
   @include vp-1023 {
     width: 324px;
+    padding-top: 0;
   }
 
   @include vp-767 {
