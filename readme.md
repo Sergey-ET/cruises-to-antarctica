@@ -23,3 +23,7 @@ npm run webp # Create webp images in source directory
 ### All development is done in the `source` directory
 
 ### The final code goes into the `build` directory
+
+## Project Overview
+
+https://sergey-et.github.io/cruises-to-antarctica/
